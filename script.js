@@ -58,9 +58,15 @@ function playGame(){
         let humanChoice=getHumanChoice();
         let computerChoice=getComputerChoice();
         let result=playRound(humanChoice,computerChoice);
-        console.log(`Human choice: ${humanChoice}`);
-        console.log(`Computer choice: ${computerChoice}`);
+        if(result=="Human wins !"){
+            humanscore++;
+        }
+        else{
+            computerscore++;
+        }  
         console.log(result);
+        console.log("human =" + humanscore);
+        console.log("computer =" + computerscore);
     }
 }
 playGame();
