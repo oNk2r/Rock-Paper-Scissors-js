@@ -1,4 +1,4 @@
-// console.log('Hello, World!');
+
 function getComputerChoice(){
     let v=Math.floor(Math.random() * 3);
     let choice;
